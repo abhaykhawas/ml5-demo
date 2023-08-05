@@ -80,6 +80,8 @@ function drawKeypoints()  {
           // list.push([keypoint.position.x, keypoint.position.y])
           // console.log("right coor : ", keypoint.position.x, keypoint.position.y)
           list_right.push([keypoint.position.x, keypoint.position.y])
+          image(spec,keypoint.position.x-30, keypoint.position.y-10, 120, 50);
+
         }
 
         if (keypoint.part == 'leftEye'){
@@ -87,6 +89,7 @@ function drawKeypoints()  {
           // list.push([keypoint.position.x, keypoint.position.y])
         // console.log("left coor : ", keypoint.position.x, keypoint.position.y)
         list_left.push([keypoint.position.x, keypoint.position.y])
+
 
 
 
@@ -98,10 +101,10 @@ function drawKeypoints()  {
         //   console.log("Left eye : ", lE[0])
         // }
     
-        if(x%100 == 0) {
-          list_left = []
-          list_right = []
-        }
+        // if(x%100 == 0) {
+        //   list_left = []
+        //   list_right = []
+        // }
 
         // image(spec,keypoint.list_right[list_right.length-1][0], keypoint.position.y, 50, 50);
 
